@@ -1,0 +1,8 @@
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
+-keep class com.weatherapp.data.remote.dto.** { *; }
+-keep class com.weatherapp.data.local.entity.** { *; }
+-keepclassmembers class **$$serializer { *; }
+-keepclassmembers class **$Companion { kotlinx.serialization.KSerializer serializer(...); }
+-dontwarn kotlinx.serialization.**
+-dontwarn okhttp3.**
+-dontwarn retrofit2.**
